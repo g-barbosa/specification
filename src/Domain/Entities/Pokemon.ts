@@ -1,10 +1,6 @@
 import { BaseSpecification } from '../Specifications/BaseSpecification';
+import { PokemonTypeEnum } from './PokemonTypeEnum';
 
-export enum PokemonTypeEnum {
-  Grass = 1,
-  Fire = 2,
-  Water = 3
-}
 
 export default class Pokemon {
   public readonly name: string;

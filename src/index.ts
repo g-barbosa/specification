@@ -1,4 +1,5 @@
-import Pokemon, { PokemonTypeEnum } from './Domain/Entities/Pokemon';
+import Pokemon from './Domain/Entities/Pokemon';
+import { PokemonTypeEnum } from './Domain/Entities/PokemonTypeEnum';
 
 let pokemons: Pokemon[] = [];
 
