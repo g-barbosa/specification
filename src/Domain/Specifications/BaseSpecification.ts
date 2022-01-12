@@ -1,5 +1,5 @@
 export abstract class BaseSpecification<T> implements ISpecification<T> {
-  abstract is(candidate: T): boolean;
+  abstract isSatisfiedBy(candidate: T): boolean;
 
   and(specification: ISpecification<T>): ISpecification<T> {
     return new AndSpecification<T>(this, specification);

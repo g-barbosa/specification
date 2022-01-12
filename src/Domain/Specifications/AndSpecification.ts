@@ -5,7 +5,7 @@ export class AndSpecification<T> extends BaseSpecification<T> {
     super();
   }
 
-  public override is(candidate: T): boolean {
-      return this.specificationOne.is(candidate) && this.specificationTwo.is(candidate);
+  public override isSatisfiedBy(candidate: T): boolean {
+      return this.specificationOne.isSatisfiedBy(candidate) && this.specificationTwo.isSatisfiedBy(candidate);
   }
 }

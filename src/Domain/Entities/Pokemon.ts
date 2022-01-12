@@ -14,7 +14,7 @@ export default class Pokemon {
 
     static Type = class extends BaseSpecification<Pokemon> {
       constructor(private type: PokemonTypeEnum) { super(); }
-      is(candidate: Pokemon): boolean {
+      isSatisfiedBy(candidate: Pokemon): boolean {
         return candidate.type == this.type;
       }
     }

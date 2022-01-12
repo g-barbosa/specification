@@ -7,7 +7,7 @@ export class OrSpecification<T> extends BaseSpecification<T> {
     this.specificationTwo = specificationTwo;
   }
 
-  public override is(candidate: T): boolean {
-      return this.specificationOne.is(candidate) || this.specificationTwo.is(candidate);
+  public override isSatisfiedBy(candidate: T): boolean {
+      return this.specificationOne.isSatisfiedBy(candidate) || this.specificationTwo.isSatisfiedBy(candidate);
   }
 }

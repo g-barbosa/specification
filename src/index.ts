@@ -14,7 +14,7 @@ const fireTypeSpec = new Pokemon.Filters.Type(PokemonTypeEnum.Fire)
 const fireAndGrassTypeSpec = new Pokemon.Filters.Type(PokemonTypeEnum.Fire).and(new Pokemon.Filters.Type(PokemonTypeEnum.Grass))
 
 pokemons.forEach(poke => {
-  if (fireOrWaterTypeSpec.is(poke)) {
+  if (fireOrWaterTypeSpec.isSatisfiedBy(poke)) {
     console.log('yeah! Your pokemon is a Fire-type or Water-type Pokemon!')
   } else {
     console.log('ooh! Your pokemon is not a Fire-type pokemon!')
